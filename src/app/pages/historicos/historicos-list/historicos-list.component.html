@@ -1,0 +1,29 @@
+<p-panel header="HISTÓRICO DOS SERVIÇOS">
+  <div class="principal">
+
+
+    <div class="card">
+      <p-table styleClass="p-datatable-gridlines" [value]="historicos" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+
+          <tr>
+            <th>Autorizador</th>
+            <th>STATUS SERVIÇO</th>
+            <th> HORA</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-historico>
+          <tr>
+            <td>{{historico.autorizador}}</td>
+            <td>
+              <i class="fa fa-circle fa-2x" [style.color]="corStatus(historico)" aria-hidden="true"> </i>
+            </td>
+
+            <td>{{historico.data}}</td>
+
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+</p-panel>

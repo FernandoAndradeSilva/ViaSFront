@@ -1,0 +1,16 @@
+// MODIFICAÇÃO PARA TODO SISTEMA
+:host ::ng-deep {
+
+ p-panel {
+    .p-panel-header {
+      background: var(--blue-500);
+    }
+
+   .p-panel-title {
+     font-size: large;
+     font-weight: bolder;
+     font-family: "Apple Color Emoji";
+     color: #ffffff;
+   }
+  }
+}

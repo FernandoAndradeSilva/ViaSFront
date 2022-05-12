@@ -1,0 +1,20 @@
+$plf: 160px;
+$pt: 40px;
+
+.principal{
+  padding-left: $plf;
+  padding-right: $plf;
+  padding-top: $pt;
+}
+
+
+:host ::ng-deep {
+
+
+  .btn-custom.p-button {
+    background-color: chartreuse;
+    border: black 2px solid;
+  }
+
+
+}
